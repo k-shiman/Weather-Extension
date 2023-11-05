@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-width: 300px; 
+  width: 100%;
+  background-image: url('https://libreshot.com/wp-content/uploads/2020/07/row-trees-free-image-973x649.jpg');
+  background-size: cover; /* This will ensure that the background covers the entire element */
+  background-repeat: no-repeat; /* This will prevent the image from tiling */
+  background-position: center; /* This will center the image in the element */
+  padding: 10px; 
+  box-sizing: border-box; 
+  overflow-y: auto; 
+  border-radius: 25px; 
+  overflow: hidden; 
+}
+
+html {
+  background: hsla(0, 0%, 100%, 1);
+  background: linear-gradient(225deg, hsla(0, 0%, 100%, 1) 0%, hsla(224, 15%, 67%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(0, 0%, 100%, 1) 0%, hsla(224, 15%, 67%, 1) 100%); 
+  background: -webkit-linear-gradient(225deg, hsla(0, 0%, 100%, 1) 0%, hsla(224, 15%, 67%, 1) 100%); 
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#9EA5B8", GradientType=1 );
+}
+
+.weather-forecast-header {
+  background-color: #ffffff; 
+  padding: 10px 0; 
+  margin-top: 1px;
+  margin-bottom: 20px; 
+  text-align: center; 
+  font-size: 24px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+}
+
+  
+  .container {
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+    width: 90%; 
+    text-align: center;
+    margin: 10px auto; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin-top: 100px;
+  }
+
+
+  .animated-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: max-width 0.3s ease, padding 0.3s ease, transform 0.3s ease; 
+    border-radius: 25px; 
+  }
+  
+  .animated-search-form:hover {
+    max-width: 350px; 
+    padding: 10px; 
+    transform: translateY(10px); 
+  }
+  
+  
+  #location-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #location-input::placeholder {
+    color: #aaa;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #weather-info {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background: white;
+  }
+  
+  #weather-info.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #weather-info h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  #weather-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+
+  
+  
+
+  
